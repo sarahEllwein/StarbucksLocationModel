@@ -1,0 +1,2 @@
+24 Oct. 2021  16:30-18:30: Initial meeting and first dataset creation
+03 Dec. 2021  18:10-19:10: Merging of new county <--> cities mapping with data
