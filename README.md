@@ -11,3 +11,5 @@ US Househole Income Statistics (2017) - https://www.kaggle.com/goldenoakresearch
 US Census Demographic Data (2017) - https://www.kaggle.com/muonneutrino/us-census-demographic-data
 
 US Census County Population (2017) - https://www2.census.gov/programs-surveys/popest/datasets/2010-2017/cities/totals/sub-est2017_all.csv
+
+United States Cities Database (2021) - https://simplemaps.com/data/us-cities
