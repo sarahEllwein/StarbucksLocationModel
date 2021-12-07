@@ -2,3 +2,4 @@
 03 Dec. 2021  18:10-19:10: Merging of new county <--> cities mapping with data
 04 Dec. 2021  14:20-16:50: Data Preprocessing
 06 Dec. 2021  14:10-14:40: Random Subsets for regression
+06 Dec. 2021  16:15-16:45: Drafted NN
