@@ -1,0 +1,6 @@
+Sarah Ellwein: 11/09/2021 02:00 AM - 02:30 AM: Initialized GitHub repository for Starbucks Location Model and added datasets
+Sarah Ellwein: 11/13/2021 02:00 PM - 05:00 PM: Project group meeting at 24 Study Hub.
+Sarah Ellwein: 11/13/2021 05:30 PM - 07:00 PM: Fixed population dataset and attempted to fix income dataset.
+Sarah Ellwein: 12/03/2021 10:00 PM - 02:00 AM: Fixed minor merging issues. Created dataframe of correlations with store count.
+Sarah Ellwein: 12/04/2021 02:00 PM - 04:00 AM: Project group meeting at Engineering Courtyard.
+Sarah Ellwein: 12/06/2021 09:00 PM - 02:00 AM: Fixed minor preprocessing issues. Drafted linear model.
