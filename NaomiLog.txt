@@ -1,1 +1,1 @@
-12/7/21 6 PM - 7 PM
+12/7/21 4 - 5 PM Finished up visualization of accuracy over degree polynomial + refactored feature graphs
