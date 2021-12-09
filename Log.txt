@@ -6,3 +6,16 @@ Sarah Ellwein: 12/04/2021 02:00 PM - 04:00 AM: Project group meeting at Engineer
 Sarah Ellwein: 12/06/2021 09:00 PM - 12:00 AM: Fixed minor preprocessing issues. Drafted linear model.
 Sarah Ellwein: 12/07/2021 12:00 AM - 02:00 AM: Fixed multilinearity issues and improved linear model.
 Sarah Ellwein: 12/08/2021 12:00 PM - 01:00 PM: Finalized linear model.
+
+Cole Gillespie:
+24 Oct. 2021  16:30-18:30: Initial meeting and first dataset creation
+03 Dec. 2021  18:10-19:10: Merging of new county <--> cities mapping with data
+04 Dec. 2021  14:20-16:50: Data Preprocessing
+06 Dec. 2021  14:10-14:40: Random Subsets for regression
+06 Dec. 2021  16:15-16:45: Drafted NN
+08 Dec. 2021  15:00-16:15: Presentation Slides
+
+Naomi Chao:
+12/5/21 3 - 3:30 Created feature graphs
+12/7/21 4 - 5 PM Finished up visualization of accuracy over degree polynomial + refactored feature graphs
+12/8/21 3 - 4:30 PM Presentation slides
