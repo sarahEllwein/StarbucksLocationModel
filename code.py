@@ -78,7 +78,6 @@ df['Count'] = df['Count'].fillna(0)
 df['Men'] = (df['Men']/df['TotalPop'])*100
 df['Women'] = (df['Women']/df['TotalPop'])*100
 df['Employed'] = (df['Employed']/df['TotalPop'])*100
-df
 
 
 # ### Correlation
@@ -104,7 +103,7 @@ best_corr
 
 
 feature_names = ['TotalPop', 'Hispanic', 'White', 'Black', 'Native', 'Asian', 'Pacific', 'IncomePerCap', 'Poverty',                 'Professional', 'Service', 'Office', 'Construction', 'Production', 'Drive', 'Carpool', 'Transit',                 'Walk', 'OtherTransp']
-features = df[var[1:]].fillna(0)
+features = df[feature_names].fillna(0)
 features = features.apply(lambda x: stats.zscore(x))
 target = df[["Count"]]
 x_train, x_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=0)
@@ -113,11 +112,11 @@ x_train, x_test, y_train, y_test = train_test_split(features, target, test_size=
 # In[10]:
 
 
-x_train_temp, x_test_temp, y_train_temp, y_test_temp = train_test_split(x_train, y_train, test_size=0.2, random_state=1)
-
 array_for_visualization = []
 
+print('Cross Validation:')
 for i in range(1,5):
+    x_train_temp, x_test_temp, y_train_temp, y_test_temp = train_test_split(x_train, y_train, test_size=0.2)
     poly_model = make_pipeline(PolynomialFeatures(i), LinearRegression())
     d = pd.DataFrame(cross_validate(poly_model, x_train_temp, y_train_temp, scoring=('r2', 'neg_mean_squared_error')))
     print(d.mean())
@@ -129,11 +128,13 @@ for i in range(1,5):
 
 # In[11]:
 
-
 model = LinearRegression()
 model.fit(x_train, y_train)
-y_pred = model.predict(x_test)
-print(r2_score(y_test, y_pred))
+
+map_ = np.vectorize(lambda x: 0 if x < 0 else math.floor(x))
+y_pred = np.array([map_(y) for y in model.predict(x_test)])
+
+print(f'Accuracy (R Squared): {r2_score(y_test, y_pred)}')
 
 
 # In[12]:
