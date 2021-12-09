@@ -102,11 +102,11 @@ best_corr
 # In[9]:
 
 
-feature_names = ['TotalPop', 'Hispanic', 'White', 'Black', 'Native', 'Asian', 'Pacific', 'IncomePerCap', 'Poverty',                 'Professional', 'Service', 'Office', 'Construction', 'Production', 'Drive', 'Carpool', 'Transit',                 'Walk', 'OtherTransp']
+feature_names = ['TotalPop', 'White', 'Asian', 'IncomePerCap', 'Professional', 'Construction', 'Production', 'Transit']
 features = df[feature_names].fillna(0)
 features = features.apply(lambda x: stats.zscore(x))
 target = df[["Count"]]
-x_train, x_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=0)
+x_train, x_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=1)
 
 
 # In[10]:
